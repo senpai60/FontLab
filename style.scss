@@ -33,6 +33,7 @@ main {
     height: 100%;
     width: 0%;
     background-color: rgb(81, 14, 27);
+    transition: all 0.3s ease-in-out;
   }
   section {
     display: flex;
