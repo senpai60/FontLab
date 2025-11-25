@@ -9,8 +9,10 @@ export const asideToggle = () => {
 
   if (isAsideOpen) {
     asideEl.style.width = '20%';
+    burgerBtn.innerHTML = `<i class="ri-menu-unfold-3-line"></i>`;
   } else {
     asideEl.style.width = '0%';
+    burgerBtn.innerHTML = `<i class="ri-menu-fold-line"></i>`;
   }
 });
 }
