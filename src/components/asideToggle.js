@@ -5,7 +5,6 @@ let isAsideOpen = false;
 export const asideToggle = () => {
   burgerBtn.addEventListener("click", () => {
   isAsideOpen = !isAsideOpen;
-  console.log(isAsideOpen);
 
   if (isAsideOpen) {
     asideEl.style.width = '20%';
