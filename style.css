@@ -62,6 +62,7 @@ main section .wrapper .font-card {
   background-position: center;
   background-size: contain;
   padding: 25px;
+  position: relative;
   background: #111;
   border-radius: 16px;
   color: white;
@@ -70,6 +71,19 @@ main section .wrapper .font-card {
   gap: 15px;
   border: 1px solid #222;
   transition: all ease 0.3s;
+}
+main section .wrapper .font-card .save-font {
+  background: rgba(54, 85, 37, 0.7254901961);
+  color: white;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 main section .wrapper .font-card .card-top {
   display: flex;

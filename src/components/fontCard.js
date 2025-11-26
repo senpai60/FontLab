@@ -19,6 +19,7 @@ export const fontCard = (fontData) => {
   </div>
 
   <div class="preview">
+  <button class="save-font">save fonts</button>
     <h1 style="${elem.css_usage.header}">
       ${elem.header_font}
     </h1>
