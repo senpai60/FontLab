@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -64,34 +66,73 @@ main {
       scrollbar-width: none;
 
       .font-card {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url("https://images.unsplash.com/photo-1513244653406-d64972b1c980?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        height: 300px;
         background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-        border-radius: 14px;
-        padding: 20px;
+        background-size: contain;
+        padding: 25px;
+        background: #111;
+        border-radius: 16px;
         color: white;
-        flex-direction: column;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+        flex-direction: column;
+        gap: 15px;
+        border: 1px solid #222;
+        transition: all ease .3s;
 
-        h1 {
-          font-size: 4rem;
-          font-weight: 500;
+        .card-top {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
         }
 
-        p {
-            text-align: center;
-          font-size: 1rem;
-          font-weight: 300;
+        .category {
+          font-size: 0.9rem;
+          color: #999;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .pair-name {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #ffffff;
+        }
+
+        .preview h1 {
+          margin-bottom: 8px;
+          color: hsl(0, 0, 95);
+        transition: all ease .8s;
+
+        }
+        .preview p{
+          color: hsl(0, 0, 80);
+        transition: all ease .8s;
+
+
+        }
+
+        .card-bottom {
+          margin-top: auto;
+          display: flex;
+          gap: 10px;
+        }
+
+        .copy-btn,
+        .import-btn,
+        .details-btn {
+          background: #222;
+          color: white;
+          border: 1px solid #333;
+          padding: 8px 12px;
+          font-size: 0.9rem;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: 0.2s;
+        }
+
+        .copy-btn:hover,
+        .import-btn:hover {
+          background: #333;
         }
       }
     }

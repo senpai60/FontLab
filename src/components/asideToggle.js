@@ -1,17 +1,23 @@
 const burgerBtn = document.getElementById("burger");
-const asideEl = document.getElementById('aside');
+const asideEl = document.getElementById("aside");
 let isAsideOpen = false;
 
-export const asideToggle = () => {
-  burgerBtn.addEventListener("click", () => {
-  isAsideOpen = !isAsideOpen;
+export const openAside = () => {
+  asideEl.style.width = "40%";
+  burgerBtn.innerHTML = `<i class="ri-menu-unfold-3-line"></i>`;
+  isAsideOpen = true;
+};
 
+export const closeAside = () => {
+  asideEl.style.width = "0%";
+  burgerBtn.innerHTML = `<i class="ri-menu-fold-line"></i>`;
+  isAsideOpen = false;
+};
+
+export const asideToggle = () => {
   if (isAsideOpen) {
-    asideEl.style.width = '20%';
-    burgerBtn.innerHTML = `<i class="ri-menu-unfold-3-line"></i>`;
+    closeAside();
   } else {
-    asideEl.style.width = '0%';
-    burgerBtn.innerHTML = `<i class="ri-menu-fold-line"></i>`;
+    openAside();
   }
-});
-}
+};
